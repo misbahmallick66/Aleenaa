@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>For Aleenu </title>
+<title>For Aleenu</title>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -12,12 +12,11 @@
     --gold-light: #e6c77d;
     --text-main: #4a3a20;
     --bg-gradient: linear-gradient(-45deg, #fff7e6, #ffe7b3, #f7d27a, #fff1cc);
-    --emoji-font: "Montserrat", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
 }
 
 body {
     margin: 0;
-    font-family: var(--emoji-font);
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-main);
     overflow-x: hidden;
     background: var(--bg-gradient);
@@ -69,7 +68,7 @@ button {
 .gallery { position: relative; height: 100vh; width: 100vw; overflow: hidden; }
 .polaroid {
     position: absolute;
-    width: 150px; /* Made slightly smaller to fit 12 photos better */
+    width: 150px;
     background: #fff;
     padding: 10px 10px 20px 10px;
     border-radius: 2px;
@@ -116,9 +115,9 @@ button {
 
 <div id="intro" class="center">
     <div class="glass-card">
-        <h1>Hi Aleenu! </h1>
+        <h1>Hi Aleenu!</h1>
         <p style="font-weight: 300; letter-spacing: 2px;">Tap to enter your 16th level celebration</p>
-        <button onclick="startExperience()">Enter Experience </button>
+        <button onclick="startExperience()">Enter Experience</button>
     </div>
 </div>
 
@@ -131,22 +130,22 @@ button {
 <div id="letter" class="hidden">
     <div class="letter-container">
         <div class="letter-content">
-            Hii <span class="highlight">aleenuu</span> it's your birthday happy birthday to you aleenaa  <br><br>
-            My best friend, you supported me in every situation thank you for that—a big thank you for that really. I swear to god you are the <span class="highlight">kindest soul</span> i ever met. You never judged me, you never disrespect mee (unless that gayy allegations ).<br><br>
+            Hii <span class="highlight">aleenuu</span> it's your birthday happy birthday to you aleenaa <br><br>
+            My best friend, you supported me in every situation thank you for that—a big thank you for that really. I swear to god you are the <span class="highlight">kindest soul</span> i ever met. You never judged me, you never disrespect mee (unless that gayy allegations).<br><br>
             Yeahh sooo it's your birthday! Last time I forgot your birthday and didn't wish you at 12 ammmm cuz it's called efforts, but this timee i willlll! <br><br>
             Soo yeahh enjoy your day, enjoy this with your friends, enjoy this with your family, enjoy this with mee, with everyone! And please take care of yourself. Don't give a fuck about your teachers okk?? Fuck them, in the end they are just <span class="highlight">NPCs</span> you are the <span class="highlight">main character</span>.<br><br>
             Soo yeahh i can't give you anything but take this birthday wish from me—this is the only thing I can do rn cuz I'm an online friend. I always wish to goo for a dinner party with you and hope this will happen.<br><br>
             And Yeahh <span class="highlight">pray all the namaz</span>, don't leave them okk?? Cuz it's now farz for you. <br><br>
-            Soo yeah it's your birthdayyyyyyyyy happy birthday aleenuuuuuu and sorry for everything  I will always regret for that yk what Im talking about I'm sorry ahhh yeah soo where I was? <br><br>
+            Soo yeah it's your birthdayyyyyyyyy happy birthday aleenuuuuuu and sorry for everything. I will always regret for that yk what Im talking about I'm sorry ahhh yeah soo where I was? <br><br>
             Yeah it's your <span class="highlight">16th birthday</span>, your 16th level on this earth! <br><br>
             Just this... it's your <span class="highlight">mallick hereee</span> wishing you a very very happy birthday girlyyyyy!
-            <div class="end-sig">Happy 16th, Aleena! </div>
+            <div class="end-sig">Happy 16th, Aleena!</div>
         </div>
     </div>
 </div>
 
 <script>
-const message = "Ok listen… before cake, before wishes, before drama — I saved some moments here for you  Ready? Don’t laugh too much.";
+const message = "Ok listen… before cake, before wishes, before drama — I saved some moments here for you. Ready? Don’t laugh too much.";
 let i = 0;
 
 function type() {
@@ -167,20 +166,19 @@ function startExperience() {
     type();
 }
 
-// 12 PHOTOS ADDED HERE
 const images = [
-    ['image1.jpg', 'Moment 1 '],
+    ['image1.jpg', 'Moment 1'],
     ['image2.jpg', 'Level 16 Unlocked'],
-    ['image3.jpg', 'The Bestie '],
+    ['image3.jpg', 'The Bestie'],
     ['image4.jpg', 'Main Character Energy'],
-    ['image5.jpg', 'Kindest Soul '],
-    ['image6.jpg', 'Total Vibe '],
-    ['image7.jpg', 'Stay Iconic '],
-    ['image8.jpg', 'Memories '],
-    ['image9.jpg', 'Girlyyy '],
-    ['image10.jpg', 'No NPCs allowed '],
-    ['image11.jpg', 'The Era '],
-    ['image12.jpg', 'Always You! ']
+    ['image5.jpg', 'Kindest Soul'],
+    ['image6.jpg', 'Total Vibe'],
+    ['image7.jpg', 'Stay Iconic'],
+    ['image8.jpg', 'Memories'],
+    ['image9.jpg', 'Girlyyy'],
+    ['image10.jpg', 'No NPCs allowed'],
+    ['image11.jpg', 'The Era'],
+    ['image12.jpg', 'Always You!']
 ];
 
 function showMemories() {
@@ -193,14 +191,12 @@ function showMemories() {
             const div = document.createElement('div');
             div.className = 'polaroid';
             div.style.setProperty('--r', Math.random() * 20 - 10 + 'deg');
-            // Scatter logic adjusted for 12 photos
             div.style.left = Math.random() * 75 + 5 + '%';
             div.style.top = Math.random() * 70 + 5 + '%';
             div.innerHTML = `<img src='${img[0]}'><div class='caption'>${img[1]}</div>`;
             g.appendChild(div);
-            // Wait longer before showing letter so she can see all 12 pics
             if (index === images.length - 1) setTimeout(showLetter, 6000);
-        }, 800 * index); // Slightly faster drop so 12 photos don't take forever
+        }, 800 * index);
     });
 }
 
@@ -212,7 +208,7 @@ function showLetter() {
 function createHeart(e) {
     const heart = document.createElement('div');
     heart.className = 'heart-pop';
-    heart.innerHTML = '';
+    heart.innerHTML = ''; // This is the click effect - keeping it as it's the requested interaction feature.
     heart.style.left = e.clientX + 'px';
     heart.style.top = e.clientY + 'px';
     document.body.appendChild(heart);
